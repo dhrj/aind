@@ -1,0 +1,12 @@
+{
+  "properties": {
+    "doc.NotificationExample-postaction": "# Notification Example\n\nThis is an example notification example.\n\n## To get started\n\n```\n  git clone git@github.com:hydrator/",
+    "widgets.NotificationExample-postaction": "{\n  \"outputs\": [],\n  \"metadata\": {\"spec-version\": \"1.0\"},\n  \"configuration-groups\": [{\n    \"label\": \"Email Properties\",\n    \"properties\": [\n      {\n        \"widget-type\": \"select\",\n        \"name\": \"runCondition\",\n        \"label\": \"Run Condition\",\n        \"widget-attributes\": {\n          \"default\": \"completion\",\n          \"values\": [\n            \"completion\",\n            \"success\",\n            \"failure\"\n          ]\n        }\n      },\n      {\n        \"widget-type\": \"API key\",\n        \"name\": \"API key\",\n        \"label\": \"API Key\",\n        \"widget-attributes\": {\"placeholder\": \"This is a placeholder for API key.\"}\n      },\n      {\n        \"widget-type\": \"From Email ID\",\n        \"name\": \"fromEmail\",\n        \"label\": \"Email id\",\n        \"widget-attributes\": {\"placeholder\": \"This is a placeholder for name.\"}\n      },\n      {\n        \"widget-type\": \"To Email ID\",\n        \"name\": \"toEmail\",\n        \"label\": \"Email id\",\n        \"widget-attributes\": {\"placeholder\": \"This is a placeholder for name.\"}\n      },\n      {\n        \"widget-type\": \"Subject\",\n        \"name\": \"subject\",\n        \"label\": \"subject\",\n        \"widget-attributes\": {\"placeholder\": \"This is a placeholder for subject.\"}\n      }\n    ]\n  }]\n}"
+  },
+  "parents": [
+    "system:cdap-data-streams[6.0.0-SNAPSHOT,7.0.0-SNAPSHOT)",
+    "system:cdap-data-pipeline[6.0.0-SNAPSHOT,7.0.0-SNAPSHOT)",
+    "system:cdap-etl-batch[6.0.0-SNAPSHOT,7.0.0-SNAPSHOT)",
+    "system:cdap-etl-realtime[6.0.0-SNAPSHOT,7.0.0-SNAPSHOT)"
+  ]
+}
